@@ -1,4 +1,2 @@
 # food-diaries
-# food-diaries
-# food-diaries
-# food-diaries project
+# D3 visualization of personal travel data
