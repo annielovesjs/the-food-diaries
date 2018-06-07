@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3 Maps</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">    
+</head>
+<body>
+    <div id="chart">
+    </div>
+    <div id="intro">
+        <img class="dp" src="./pics/meteroa.jpg" onclick="popup('Hi, I\'m Annie! This year, I\'ve travelled to 16 countries & 38 cities spanning 3 continents. I travel mainly for food so I have a couple of dish recommendations and travel tips for folks flying out this year. Click on the coloured countries to zoom in and learn more. Take a look around and Bon Appetit!')" alt=profile""/>
+        <div class="textbox visible">
+            <p id="type">Click Me!</p>
+            <div class="queries">
+                <p class="question1" onclick="popup('Summer 2018: Korea (Seoul), US (New York), Japan (Nagoya, Kyoto, Osaka, Okunoshima, Hokkaido, Shizuoka)')">Next Update?</p>
+                <p class="exit" onclick="exit()">Hide</p>            
+            </div>   
+        </div>
+    </div>
+    <div class="site"><h2 class="title">The Food Diaries</h2><a class="site" href="http://annieliang.io">annieliang.io</a></div>
+    <div class="back" onclick="back()">Retreat</div>
+    <script src="d3.min.js"></script>        
+    <script src="app.js"></script>
+</body>
+</html>

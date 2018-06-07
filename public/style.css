@@ -1,0 +1,270 @@
+body {
+    margin: 0 auto;
+    background: rgb(252, 254, 255);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    cursor: url("./pics/glass.png") 23 23, help;    
+    width: 100%;
+    height: 80vh;
+}
+
+button:focus {
+    outline: 0;
+}
+
+ul {
+    padding-top: 0;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    display: flex;
+    padding: 10px;
+    /* color: #56b4c3; */
+    font-family: 'Permanent Marker', cursive;
+    color: #d00808;
+    font-size: 24px;
+}
+
+.site a {
+    top: 70%;
+    font-size: 10px;
+    color: #d0080849;
+}
+
+.site h2 {
+    top: 0;
+}
+
+#chart{
+    width: 100%;
+    background: rgb(252, 254, 255);
+    position: relative;
+    overflow: visible;
+    margin-top: 40%;
+}
+
+#chart svg {
+    max-width: 100%;
+    overflow: visible;       
+}
+
+.dp {
+    cursor: pointer;    
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    transition: all .3s ease-in-out;
+    margin-right: 35px;
+}
+
+.grow {
+    width: 80px;
+    height: 80px;
+}
+
+#intro {
+    padding: 10px;
+    display: flex;
+    color: rgba(0, 0, 0, 0.723);
+    line-height: 1.3em;
+    position: absolute;
+    top: 90%;
+    align-items: center;
+}
+
+.textbox {
+    background: white;
+    padding: 0px 15px;
+    font-size: 15px;
+    position: relative;
+    display: none;
+    max-width: 470px;
+}
+
+.textbox:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 75%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: #ffffff;
+	border-left: 0;
+	margin-top: -28px;
+	margin-left: -13px;
+}
+
+.question1, .exit, .buttons button, .back  {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    border: 2px solid rgb(152, 209, 236);
+    color: rgb(152, 209, 236);
+    transition: all .3s ease-in-out;
+}
+
+.back {
+    color:  rgb(218, 112, 112);
+    border: 2px solid rgb(218, 112, 112);
+}
+
+.back:hover {
+    color: white;    
+    background: rgb(218, 112, 112);    
+}
+
+.question1, .exit {
+    display: none;
+    margin-top: 0;  
+}
+
+.question1:hover, .exit:hover {
+    background: rgb(152, 209, 236);
+    color: white;
+}
+
+.buttons button:hover {
+    background: #00BCD4;
+    color: white;
+}
+
+.visible {
+    display: inline-block;
+}
+
+/*back to map */
+.back {
+    position: absolute;
+    right: 2%;
+    top: 93%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* description */
+
+div.tooltip {
+    position: absolute;     
+    text-align: center;     
+    padding: 10px;
+    font: 12px sans-serif;    
+    background: #fff; 
+    border: none;       
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;  
+    max-width: 265px;
+    min-width: 195px;
+    min-height: 340px;
+    box-shadow: 5px 5px 18px #888888;
+}
+
+#closeTab {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    border: 2px solid #00BCD4;
+    border-radius: 100%;
+    padding: 5px 10px;
+    background: #00BCD4;
+    color: white;
+    cursor: pointer;
+}
+
+.description {
+    color: #000005d1;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    line-height: 1.3em;
+}
+
+.countryPic {
+    width: 100%;
+    max-height: 195px;
+    min-height: 160px;
+}
+
+.name {
+    display: inline-block;
+    padding: 0px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 10%; 
+}
+
+.buttons button {
+    border: 2px solid #00BCD4;
+    flex-grow: 1;
+    color: #00BCD4;
+}
+
+#tipsLink {
+    border-right: none;
+    border-left: none;
+}
+
+.description > ul {
+    padding-left: 18px;
+}
+
+.picDescrip {
+    width: 100%;
+}
+
+.linkpic {
+    color: #00BCD4;
+}
+
+/* media queries*/
+@media only screen and (min-width: 600px) {
+    #chart {
+        margin-top: 20%;
+    }
+
+    .back {
+        padding: 15px;
+        font-size: 30px;
+        top: 90%;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #chart {
+        margin-top: 7%;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    #chart {
+        margin-top: 4%;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #chart {
+        margin-top: 0px;
+    }
+}
